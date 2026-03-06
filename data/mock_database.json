@@ -1,0 +1,106 @@
+{
+    "users": [
+        {
+            "user_id": "USR001",
+            "email": "ali@sirket.com",
+            "name": "Ali Yılmaz",
+            "status": "active",
+            "created_date": "2023-01-15",
+            "last_login": "2024-03-01"
+        },
+        {
+            "user_id": "USR002", 
+            "email": "ayse@sirket.com",
+            "name": "Ayşe Demir",
+            "status": "active",
+            "created_date": "2023-02-20",
+            "last_login": "2024-02-28"
+        },
+        {
+            "user_id": "USR003",
+            "email": "mehmet@sirket.com", 
+            "name": "Mehmet Kaya",
+            "status": "suspended",
+            "created_date": "2023-03-10",
+            "last_login": "2024-01-15"
+        },
+        {
+            "user_id": "USR004",
+            "email": "zeynep@sirket.com",
+            "name": "Zeynep Öztürk",
+            "status": "active", 
+            "created_date": "2023-04-05",
+            "last_login": "2024-03-02"
+        }
+    ],
+    "transactions": [
+        {
+            "transaction_id": "TRX001",
+            "user_id": "USR001",
+            "amount": 1500.00,
+            "status": "failed",
+            "timestamp": "2024-03-01T14:30:00",
+            "description": "Pro paket ödemesi"
+        },
+        {
+            "transaction_id": "TRX002",
+            "user_id": "USR001", 
+            "amount": 1500.00,
+            "status": "success",
+            "timestamp": "2024-03-01T14:35:00",
+            "description": "Pro paket ödemesi"
+        },
+        {
+            "transaction_id": "TRX003",
+            "user_id": "USR002",
+            "amount": 500.00,
+            "status": "success",
+            "timestamp": "2024-02-28T10:15:00",
+            "description": "Basic paket ödemesi"
+        },
+        {
+            "transaction_id": "TRX004",
+            "user_id": "USR003",
+            "amount": 3000.00,
+            "status": "failed",
+            "timestamp": "2024-02-25T16:45:00",
+            "description": "Enterprise paket ödemesi"
+        },
+        {
+            "transaction_id": "TRX005",
+            "user_id": "USR001",
+            "amount": 200.00,
+            "status": "success",
+            "timestamp": "2024-02-20T09:00:00",
+            "description": "Ek özellik alımı"
+        },
+        {
+            "transaction_id": "TRX006",
+            "user_id": "USR004",
+            "amount": 1500.00,
+            "status": "failed",
+            "timestamp": "2024-03-02T11:20:00",
+            "description": "Pro paket ödemesi"
+        }
+    ],
+    "fraud_reasons": [
+        {
+            "transaction_id": "TRX001",
+            "reason": "Yetersiz bakiye - Banka hesabında yeterli fon bulunamadı",
+            "detailed_code": "INSUFFICIENT_FUNDS",
+            "detected_at": "2024-03-01T14:31:00"
+        },
+        {
+            "transaction_id": "TRX004", 
+            "reason": "Şüpheli aktivite - Hesap askıda olduğu için işlem reddedildi",
+            "detailed_code": "ACCOUNT_SUSPENDED",
+            "detected_at": "2024-02-25T16:46:00"
+        },
+        {
+            "transaction_id": "TRX006",
+            "reason": "Kart bilgileri geçersiz - Kredi kartı son kullanma tarihi geçmiş",
+            "detailed_code": "INVALID_CARD",
+            "detected_at": "2024-03-02T11:21:00"
+        }
+    ]
+}
